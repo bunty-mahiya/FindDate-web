@@ -48,7 +48,7 @@ const [FirstName, setfirstName] = useState(firstName || "");
     <span> profile updated successfully.</span>
   </div>
 </div>}
-    <div className="flex justify-center gap-4 items-center relative">
+    <div className="flex flex-col lg:flex-row justify-center gap-4 items-center relative">
       <div className="flex justify-center  mt-12">
         <div className="card  bg-base-300 w-96 shadow-sm">
           <div className="card-body flex gap-7 flex-col ">
@@ -162,5 +162,6 @@ const [FirstName, setfirstName] = useState(firstName || "");
     </>
   );
 };
+
 
 export default EditProfile;

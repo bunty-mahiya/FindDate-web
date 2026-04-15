@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/constants";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../utils/useSlice";
+import Footer from "./Footer";
 const Body = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -26,10 +27,13 @@ const Body = () => {
    if(!userData) { fetchUser()} 
   },[])
   return (
-    <>
+    <div className="flex flex-col min-h-screen justify-between ">
       <Navber />
+      <div className="flex-1">
       <Outlet />
-    </>
+      </div>
+      <Footer/>
+    </div>
   );
 };
 

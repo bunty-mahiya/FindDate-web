@@ -51,7 +51,7 @@ const [FirstName, setfirstName] = useState(firstName || "");
     <div className="flex flex-col lg:flex-row justify-center gap-4 items-center relative">
       <div className="flex justify-center  mt-12">
         <div className="card  bg-base-300 w-96 shadow-sm">
-          <div className="card-body flex gap-7 flex-col ">
+          <div className="card-body p-6 flex gap-7 flex-col ">
             <label className="floating-label">
               <input
                 value={FirstName}

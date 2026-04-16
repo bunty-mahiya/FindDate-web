@@ -22,7 +22,7 @@ const FeedCard = ({ feedData }) => {
     }
   };
   return (
-    <div className="card bg-base-300 w-96 shadow-sm">
+    <div className="card bg-base-300 w-96 p-4 shadow-sm">
       <figure className="px-10 pt-10">
         <img src={photoURL} alt={firstName} className="rounded-xl" />
       </figure>

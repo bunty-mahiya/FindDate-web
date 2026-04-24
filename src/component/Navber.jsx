@@ -39,6 +39,7 @@ const Navber = () => {
             <span className="badge">New</span>
           </Link>
         </li>
+        <li><Link to={"/"}>Feed</Link></li>
         <li><Link to={"/connection"}>Connection</Link></li>
         <li><Link to={"/requestView"}>Request View</Link></li>
         <li><a onClick={handleLogout}>Logout</a></li>

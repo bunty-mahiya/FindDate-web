@@ -29,7 +29,6 @@ const Login = () => {
       navigate("/")
     } catch (err) {
       setError(err?.response?.data || "somethin is wrong")
-      console.log(err);
     }
   }
 
@@ -45,8 +44,7 @@ const Login = () => {
       console.log(res);
       navigate("/profile")
     }catch(err){
-      setError(err?.res?.data || "somethin is wrong")
-      console.log(err?.res?.data);
+      setError(err?.response?.data || "somethin is wrong")    //Axios ka error object hamesha .response property use karta hai, chahe tum apne success variable ko kuch bhi naam do
       
     }
   }

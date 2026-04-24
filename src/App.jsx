@@ -8,6 +8,7 @@ import { Provider } from 'react-redux'
 import Profile from './component/Profile'
 import Connection from './component/Connection'
 import RequestView from './component/RequestView'
+import Chat from './component/Chat'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Route path='profile' element={<Profile/>}/>
       <Route path='requestView' element={<RequestView/>}/>
       <Route path='connection' element={<Connection/>}/>
+      <Route path='chat/:userId' element={<Chat/>}/>
       </Route>
      </Routes>
     </BrowserRouter>
